@@ -1,0 +1,13 @@
+buttons[i][j].addActionListener(e -> {
+
+                    if (buttons[row][col].getText().equals("")) {
+
+                        buttons[row][col].setText(String.valueOf(currentPlayer));
+
+                        if (currentPlayer == 'X')
+                            currentPlayer = 'O';
+                        else
+                            currentPlayer = 'X';
+                    }
+
+                });
